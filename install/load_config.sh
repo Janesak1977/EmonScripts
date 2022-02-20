@@ -6,6 +6,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 if [ -f config.ini ]; then
     source config.ini
 else
-    echo "config.ini does not exist, please create from default e.g emonsd.config.ini"
+    echo "config.ini does not exist"
     exit 0
 fi

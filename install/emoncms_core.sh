@@ -30,7 +30,7 @@ fi
 # Copy and install emonpi.settings.ini
 if [ ! -f $emoncms_www/settings.ini ]; then
     echo "- installing default emoncms settings.ini"
-    cp $openenergymonitor_dir/EmonScripts/defaults/emoncms/emonpi.settings.ini $emoncms_www/settings.ini
+    cp $openenergymonitor_dir/EmonScripts/defaults/emoncms/debian11.settings.ini $emoncms_www/settings.ini
     sed -i "s~EMONCMS_DIR~$emoncms_dir~" $emoncms_www/settings.ini
     sed -i "s~OPENENERGYMONITOR_DIR~$openenergymonitor_dir~" $emoncms_www/settings.ini
     sed -i "s~EMONCMS_DATADIR~$emoncms_datadir~" $emoncms_www/settings.ini
